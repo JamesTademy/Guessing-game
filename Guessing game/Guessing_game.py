@@ -7,8 +7,9 @@
 import random
 
 def play_game():
-    number = random.randint(1, 10)
-    print("I'm thinking of a number between 1 and 10.")
+     upper_limit = int(input("Enter the highest number to guess: "))
+    number = random.randint(1, upper_limit)
+    print(f"I'm thinking of a number between 1 and {upper_limit}.")
    
     guess = int(input("Guess the number: "))
    
